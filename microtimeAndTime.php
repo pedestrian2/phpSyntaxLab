@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <meta charset="UTF-8">
@@ -30,6 +25,17 @@ and open the template in the editor.
         $end = microtime(true);
         $peroid = $end - $start;
         echo "microtime cost $peroid";
+        
+        
+        /*
+         * ouput:
+         *  microtime:0.22268100 1422235329
+            microtime(true):1422235329.2227
+            time:1422235329
+            Time cost 0.19701099395752 
+            microtime cost 3.2161841392517
+         * microtime function spend more than time function
+         */
         ?>
     </body>
 </html>
